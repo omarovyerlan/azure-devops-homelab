@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Lab Status</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #0b1930; color: #e8f1f7; }
+    main { max-width: 640px; margin: 64px auto; padding: 0 16px; }
+    h1 { font-weight: 600; margin-bottom: 4px; }
+    .ok { color: #4fd1a5; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+    td { padding: 10px 0; border-bottom: 1px solid #1f3a5c; }
+    td:first-child { color: #9db8cc; width: 40%; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Home Lab Status</h1>
+  <p>Service is <span class="ok">running</span></p>
+  <table>
+    <tr><td>Hostname (container)</td><td>{{ info.hostname }}</td></tr>
+    <tr><td>App version</td><td>{{ info.version }}</td></tr>
+    <tr><td>Environment</td><td>{{ info.environment }}</td></tr>
+    <tr><td>Uptime</td><td>{{ info.uptime_seconds }} s</td></tr>
+    <tr><td>Python</td><td>{{ info.python }}</td></tr>
+    <tr><td>OS</td><td>{{ info.os }}</td></tr>
+    <tr><td>Server time (UTC)</td><td>{{ info.time_utc }}</td></tr>
+  </table>
+</main>
+</body>
+</html>

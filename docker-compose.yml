@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: ./app
+      args:
+        APP_VERSION: "0.1.0"
+    image: homelab-status:0.1.0
+    container_name: homelab-status
+    ports:
+      - "8080:8080"
+    environment:
+      APP_ENV: local
+    restart: unless-stopped
