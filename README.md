@@ -1,5 +1,7 @@
 # Azure DevOps Home Lab
 
+![CI](https://github.com/omarovyerlan/azure-devops-homelab/actions/workflows/ci.yml/badge.svg)
+
 A hands-on DevOps project. A small status web app is containerized with Docker, and will be deployed to Azure using Terraform, Ansible and a GitHub Actions CI/CD pipeline.
 
 ## Roadmap
@@ -7,8 +9,8 @@ A hands-on DevOps project. A small status web app is containerized with Docker, 
 | Stage | What | Status |
 |---|---|---|
 | 1 | Containerize the app with Docker | ✅ Done |
-| 2 | CI: GitHub Actions runs tests and builds the image on every push | ⏳ Next |
-| 3 | Terraform: create the Azure network, firewall rules and Linux VM | ⏳ |
+| 2 | CI: GitHub Actions runs tests and builds the image on every push | ✅ Done |
+| 3 | Terraform: create the Azure network, firewall rules and Linux VM | ⏳ Next |
 | 4 | Ansible: harden the VM and install Docker | ⏳ |
 | 5 | CD: deploy the new container automatically | ⏳ |
 | 6 | Monitoring with Prometheus and Grafana | ⏳ |
