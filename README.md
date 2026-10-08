@@ -70,7 +70,7 @@ docker run -d -p 8080:8080 --name homelab-status homelab-status:0.1.0
 cd app
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements-dev.txt
-pytest
+python -m pytest
 ```
 
 ## Project structure
